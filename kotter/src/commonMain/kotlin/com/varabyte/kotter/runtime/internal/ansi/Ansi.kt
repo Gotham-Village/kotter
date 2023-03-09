@@ -123,6 +123,7 @@ object Ansi {
 
             object Erase {
                 val CURSOR_TO_LINE_END = Code("0${Identifiers.ERASE_LINE}")
+                val ENTIRE_LINE = Code("2${Identifiers.ERASE_LINE}")
             }
 
             // https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters

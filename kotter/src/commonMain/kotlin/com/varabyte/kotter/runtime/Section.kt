@@ -199,8 +199,7 @@ class Section internal constructor(val session: Session, private val render: Mai
                         // To clear an existing block of 'n' lines, completely delete all but one of them, and then delete the
                         // last one down to the beginning (in other words, don't consume the \n of the previous line)
                         for (i in 0 until totalNumLines) {
-                            append('\r')
-                            append(Ansi.Csi.Codes.Erase.CURSOR_TO_LINE_END.toFullEscapeCode())
+                            append(Ansi.Csi.Codes.Erase.ENTIRE_LINE.toFullEscapeCode())
                             if (i < totalNumLines - 1) {
                                 append(Ansi.Csi.Codes.Cursor.MOVE_TO_PREV_LINE.toFullEscapeCode())
                             }
