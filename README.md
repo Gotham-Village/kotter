@@ -78,7 +78,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.varabyte.kotter:kotter-jvm:1.1.1")
+    implementation("com.varabyte.kotter:kotter-jvm:1.1.2")
 }
 ```
 
@@ -118,7 +118,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("com.varabyte.kotter:kotter:1.1.1")
+                implementation("com.varabyte.kotter:kotter:1.1.2")
             }
         }
     }
