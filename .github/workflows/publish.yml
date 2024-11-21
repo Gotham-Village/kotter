@@ -72,7 +72,7 @@ jobs:
 
       - name: Setup Gradle
         if: steps.shouldrun.conclusion == 'success'
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/gradle-build-action@v3
 
       - name: Add secret Gradle properties
         if: steps.shouldrun.conclusion == 'success'
